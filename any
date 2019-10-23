@@ -1,0 +1,45 @@
+FOR initialising
+git init
+git config --global user.name "juk"
+git config --global user.email "@gmail.com"
+FOR creating files
+vi filename/touch filename
+git status
+git add .
+git commit -m "message"
+To check when file is commited and by whom 
+git log
+to check what content in file
+cat filename
+to check the list of the directory/folder contains
+ls -la
+to create new branch and to delete branch and to check how many branch are available and to which branch current pointing.
+git branch branch_name  (creating new branch)
+git branch -a/git branch (check numbers of branch)
+git branch -d branch_name  (delete branch)
+git checkout branch_name   (switching pointer to newbrach)
+git checkout master  (switching back to master branch)
+
+GIT TAG (it is use to check how many times commit has been made)
+git init
+vi index.html
+git add .
+git commit -m "msge"
+git tag version1
+vi index.html   (added new feauture)
+git add .
+git commit -m "msge"
+git status
+git tag version2  (go to the file and check the change done 2nd commit its been seen)
+git log (to see the numbers of commit made with their commit id)
+git difftool -y (to compare between two commit made)
+
+git clone url of github repo (to pull the repo from remote to local)
+
+How to push file to github local to remote
+git init
+git add .
+git commit -m "msgee"
+git remote add origin <url of github repo>
+git remote -v (verify the remote repo)
+git push -f origin master
